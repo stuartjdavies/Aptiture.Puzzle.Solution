@@ -22,7 +22,7 @@ let main argv =
 
         printfn "Enrolment log results" |> ignore
 
-        let log, _ = RandomEnrolmentGenerator.generate 54 4 subjects |> StudentEnroller.enrolMany config
+        let log, _ = RandomEnrolmentGenerator.generate 55 4 subjects |> StudentEnroller.enrolMany config
             
         File.WriteAllLines("log.txt", log |> List.map(fun item -> item.ToString()));
 

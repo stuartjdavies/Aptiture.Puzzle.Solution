@@ -28,7 +28,7 @@ namespace Aptiture.Puzzle.Solution.CSharp.Console
             
             System.Console.WriteLine("Enrolment log results");
 
-            var enrolments = RandomEnrolmentGenerator.generate(54, subjects, 4);
+            var enrolments = RandomEnrolmentGenerator.generate(55, subjects, 4);
 
             // Result is a tuple of log items and enrolments
             var result = StudentEnroller.enrol(enrolments, new Enrolment[] { }, c);
