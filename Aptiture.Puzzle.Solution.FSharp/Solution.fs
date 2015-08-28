@@ -3,6 +3,11 @@
 open System
 open FSharp.Linq
 
+//
+// A Student can be enrolled in 0..4 subjects
+// A Subject can have many students
+// A Enrolment has a Student and a Subject, it is a join table.
+//
 type SubjectType = | Programming | Design | Literature | Unknown
 type Student = { StudentNumber : string; Ranking : int; IsInternationalStudent : bool; HasScholarship : bool }
 type Subject = { Name : string; SubjectType : SubjectType;  MaxSubjectSize: int }

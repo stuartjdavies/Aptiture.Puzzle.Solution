@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// A Student can be enrolled in 4 subjects
+/// A Subject can have many students
+/// A Enrolment has a Student and a Subject, it is a join table.
+/// </summary>
 namespace Aptiture.Puzzle.Solution.CSharp
 {
     public enum SubjectTypeEnum { Programming, Design, Literature, Unknown }
